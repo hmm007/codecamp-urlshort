@@ -2,14 +2,15 @@
   "name": "url-short",
   "version": "1.0.0",
   "description": "URL parameter to shortened URL in the JSON response.",
-  "main": "server.js",
+  "main": "url.js",
   "scripts": {
+    "start": "node url.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
    "keywords": [
     "url-shortener"
   ],
-  "author": "HMM007",
+  "author": "hmm",
   "license": "",
   "bugs": {
     "url": "https://github.com/hmm007/codecamp-urlshort/issues"
@@ -19,11 +20,5 @@
     "dotenv": "^1.2.0",
     "express": "^4.13.3",
     "mongodb": "^2.1.4"
-  },
-  "devDependencies": {
-    "nodemon": "^1.8.1"
-  },
-  "engines": {
-    "node": "5.4.1"
   }
 }
