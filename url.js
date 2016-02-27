@@ -3,7 +3,7 @@ var app = newserver();
 var path = require('path');
 var database = require('mongodb');
 
-database.MongoClient.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/url-shortener', function(err, db) {
+database.MongoClient.connect(process.env.MONGOLAB_URI || 'mongodb://' + process.env.IP + ':27017/url-shortener', function(err, db) {
 
     if (err) {
         throw new Error('Database failed to connect!');
